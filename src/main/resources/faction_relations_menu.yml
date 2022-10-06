@@ -1,0 +1,129 @@
+RelationsMenu:
+  #Menu name
+  name: "&aFaction relations"
+  #Menu rows
+  rows: 6
+  #This will be where the items will be placed
+  #
+  #The startLine is the menu line where items will start to appear
+  startLine: 2
+  #Here's the final line of the items, after filling this, a new page will be created
+  endLine: 5
+  #The initial slot to start placing items, it'll only stop when they reach the endSlot
+  startSlot: 2
+  endSlot: 8
+  #member item
+  relationItem:
+    name: "&a{relation}"
+    lore:
+      - ""
+      - "&a- &eAuthor: &7{author}"
+      - ""
+      - "&a- &eName: &7{name} &8| &7{display}"
+      - ""
+      - "&b* &fType: &7{type}"
+      - "&b* &fLeader: &7{leader}"
+      - "&b* &fPower: &7{power}"
+      - ""
+      - "&b* &fClaims: &7{claims}"
+      - "&b* &fMembers: &7{members}"
+      - ""
+      - "&b* &fMotd:"
+      - "&7{motd}"
+      - ""
+    id: "PAPER"
+    data: 0
+    #you can put a nickname or a skull link
+    #see "skullOrnamentExample"
+    skullOwner: "null"
+    glow: false
+  #Next and previous page item
+  nextItem:
+    name: "&a--->"
+    lore:
+      - ""
+      - "&fClick to go"
+      - ""
+    id: "PLAYER_HEAD"
+    data: 0
+    skullOwner: "https://textures.minecraft.net/texture/f2ba866c635bc1805065af8a0247dc77b50e9bcefd98be3f93e80c29f39f39aa"
+    glow: false
+    slot: 9
+  previousItem:
+    name: "&c<---"
+    lore:
+      - ""
+      - "&fClick to go"
+      - ""
+    id: "PLAYER_HEAD"
+    data: 0
+    skullOwner: "https://textures.minecraft.net/texture/13d63c93cdd6db2f1eff2e3c42cfea6d37fbf5bc2e3763720e8168642ec9da1"
+    glow: false
+    slot: 1
+  ornamentItems:
+    # Filters:
+    # * filter_0 = ALLY, TRADING, OUT_OF_WAR, HOSTILE and ENEMY
+    # * filter_1 = TRADING, ALLY, OUT_OF_WAR, HOSTILE and ENEMY
+    # * filter_2 = OUT_OF_WAR, ALLY, TRADING, HOSTILE and ENEMY
+    # * filter_3 = HOSTILE, ENEMY, ALLY, TRADING AND OUT_OF_WAR
+    # * filter_4 = ENEMY, HOSTILE, ALLY, TRADING AND OUT_OF_WAR
+    filter_0:
+      name: "&aFilter by ally"
+      lore:
+        - ""
+        - "&7Click to filter the relations by ally first:"
+        - "&fAllies, trading, out of war, hostile and enemy"
+        - ""
+      id: "PLAYER_HEAD"
+      data: 0
+      skullOwner: "https://textures.minecraft.net/texture/b01cbfb414760efe504d4af739708a18b89b6145d7659bcf526f1e42d7bedb37"
+      glow: false
+      slot: 3
+    filter_1:
+      name: "&aFilter by trading"
+      lore:
+        - ""
+        - "&7Click to filter the relations by ally first:"
+        - "&fTrading, allies, out of war, hostile and enemy"
+        - ""
+      id: "PLAYER_HEAD"
+      data: 0
+      skullOwner: "https://textures.minecraft.net/texture/a7ed66f5a70209d821167d156fdbc0ca3bf11ad54ed5d86e75c265f7e5029ec1"
+      glow: false
+      slot: 4
+    filter_2:
+      name: "&aFilter by out of war"
+      lore:
+        - ""
+        - "&7Click to filter the relations by ally first:"
+        - "&fOut of war, allies, trading, hostile and enemy"
+        - ""
+      id: "PLAYER_HEAD"
+      data: 0
+      skullOwner: "https://textures.minecraft.net/texture/fa954b49d2876609a3c7736a43209aff68011af5d57b576430a2d66ae68b0b07"
+      glow: false
+      slot: 5
+    filter_3:
+      name: "&aFilter by hostile"
+      lore:
+        - ""
+        - "&7Click to filter the relations by ally first:"
+        - "&fHostile, enemy, allies, trading and out of war"
+        - ""
+      id: "PLAYER_HEAD"
+      data: 0
+      skullOwner: "https://textures.minecraft.net/texture/fe6093c10db9a64a17bf2204d7d9d8c2f3fefdd7038e517516faba6d07165f1c"
+      glow: false
+      slot: 6
+    filter_4:
+      name: "&aFilter by enemy"
+      lore:
+        - ""
+        - "&7Click to filter the relations by ally first:"
+        - "&fEnemy, hostile, allies, trading and out of war"
+        - ""
+      id: "PLAYER_HEAD"
+      data: 0
+      skullOwner: "https://textures.minecraft.net/texture/6a5361b52daf4f1c5c5480a39faaa10897595fa5763f757bdda3956588fec678"
+      glow: false
+      slot: 7

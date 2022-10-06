@@ -1,0 +1,89 @@
+Config:
+  tempJoinBanTime: 48 # 48 hours = 2 days
+  defaultMemberCap: 10
+  timeFormat:
+    seconds: "s"
+    minutes: "m"
+    hours: "h"
+    days: "d"
+  boss:
+    name: "{faction}'s boss"
+    attackDistance: 7.0 # the boss will attack players that are in a range of 7 blocks
+    bossBar:
+      title: "Boss {type} - {name}"
+      showDistance: 20.0 # players in a range of 20 blocks will see the boss bar
+  power:
+    incrementTime: 30 # each 30 minutes
+    incrementByTimeAmount: 1.0
+    minPower: 0.0
+    removePowerPerDeath: 1.0
+    addPowerPerKill: 1.0
+    powerPerPlayer: 1.0
+    maxFactionPower: 10.0
+    maxPlayerPower: 5.0
+
+Special:
+  zombie:
+    effects:
+      - "DAMAGE_RESISTANCE"
+      - "INCREASE_DAMAGE"
+      - "HUNGER"
+    display:
+      name: "&2Zombie"
+  spider:
+    effects:
+      - "SPEED"
+      - "FAST_DIGGING"
+      - "JUMP"
+      - "HUNGER"
+    requirements:
+      eat:
+        - "ROTTEN_FLESH"
+      armor:
+        - "IRON"
+        - "CHAINMAIL"
+        - "LEATHER"
+    display:
+      name: "&5Spider"
+
+Bosses:
+  zombie:
+    display:
+      name: "&aGiant zombie"
+      lore:
+        - ""
+        - "&fClick to get the giant zombie egg"
+        - ""
+      id: "STONE"
+      data: 0
+      skullOwner: "null"
+      glow: false
+    type: "GIANT"
+    health: 400.0
+    damage: 5.0
+    hasCritical: true
+    criticalChance: 10 #10% of chance for a critical attack
+    criticalDamage: 10.0
+    canThrow: false
+    throwItemDamage: 0.0
+    throwDelay: 30
+  spider:
+    display:
+      name: "&aSpider"
+      lore:
+        - ""
+        - "&fClick to get the spider egg"
+        - ""
+      id: "STONE"
+      data: 0
+      skullOwner: "null"
+      glow: false
+    type: "SPIDER"
+    health: 600.0
+    damage: 4.0
+    hasCritical: false
+    criticalChance: 10
+    criticalDamage: 10.0
+    canThrow: true
+    throwItemDamage: 8.0
+    throwDelay: 600 # 20 ticks = 1 second, 600 ticks = 30 seconds

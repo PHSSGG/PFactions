@@ -1,0 +1,75 @@
+MembersMenu:
+  #Menu name
+  name: "&aFaction members"
+  #Menu rows
+  rows: 6
+  #This will be where the items will be placed
+  #
+  #The startLine is the menu line where items will start to appear
+  startLine: 2
+  #Here's the final line of the items, after filling this, a new page will be created
+  endLine: 5
+  #The initial slot to start placing items, it'll only stop when they reach the endSlot
+  startSlot: 2
+  endSlot: 8
+  #member item
+  memberItem:
+    name: "&a{player}"
+    lore:
+      - ""
+      - "&a- &eLast seen: &8{last_seen} ago"
+      - ""
+      - "&b* &fKills: &7{kills}"
+      - "&b* &fDeaths: &7{deaths}"
+      - "&b* &fFaction: &7{faction}"
+      - "&b* &fPower: &7{player_power}"
+      - "&b* &fRole: &7{role}"
+      - ""
+    id: "PLAYER_HEAD"
+    data: 0
+    #you can put a nickname or a skull link
+    #see "skullOrnamentExample"
+    skullOwner: "{player}"
+    glow: false
+  #Next and previous page item
+  nextItem:
+    name: "&a--->"
+    lore:
+      - ""
+      - "&fClick to go"
+      - ""
+    id: "PLAYER_HEAD"
+    data: 0
+    skullOwner: "https://textures.minecraft.net/texture/f2ba866c635bc1805065af8a0247dc77b50e9bcefd98be3f93e80c29f39f39aa"
+    glow: false
+    slot: 9
+  previousItem:
+    name: "&c<---"
+    lore:
+      - ""
+      - "&fClick to go"
+      - ""
+    id: "PLAYER_HEAD"
+    data: 0
+    skullOwner: "https://textures.minecraft.net/texture/13d63c93cdd6db2f1eff2e3c42cfea6d37fbf5bc2e3763720e8168642ec9da1"
+    glow: false
+    slot: 1
+  ornamentItems:
+    # some ornament items have a click action
+    #
+    # invite = when you click in this item, if you have the right role it'll ask you the nickname of the desired player to invite, like the /f invite command
+    # kick = like the invite one, it'll ask you the member to execute the /f kick command on
+    # ban = it'll ask you the player to execute the /f ban command on
+    # unban = it'll ask you player to execute the /f unban command on
+    #
+    invite:
+      name: "&bInvite"
+      lore:
+        - ""
+        - "&dInvite a new player"
+        - ""
+      id: "OAK_SIGN"
+      data: 0
+      skullOwner: "null"
+      glow: false
+      slot: 5

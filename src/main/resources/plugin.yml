@@ -1,0 +1,11 @@
+name: PFactions
+version: 1.0
+main: phss.factions.PFactions
+api-version: 1.17
+softdepend:
+  - Citizens
+commands:
+  faction:
+    aliases:
+      - f
+      - factions

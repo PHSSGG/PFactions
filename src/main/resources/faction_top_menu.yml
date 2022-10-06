@@ -1,0 +1,104 @@
+TopMenu:
+  #Menu name
+  name: "&aFaction top"
+  #Menu rows
+  rows: 6
+  #This will be where the items will be placed
+  #
+  #The startLine is the menu line where items will start to appear
+  startLine: 2
+  #Here's the final line of the items, after filling this, a new page will be created
+  endLine: 5
+  #The initial slot to start placing items, it'll only stop when they reach the endSlot
+  startSlot: 2
+  endSlot: 8
+  #faction item
+  factionItem:
+    name: "&a{name}"
+    lore:
+      - ""
+      - "&a- &eName: &7{name} &8| &7{display}"
+      - ""
+      - "&b* &fType: &7{type}"
+      - "&b* &fLeader: &7{leader}"
+      - "&b* &fPower: &7{power}"
+      - ""
+      - "&b* &fCreated at &7{created} &fago"
+      - ""
+      - "&b* &fRelations: &7{relations}"
+      - "&b* &fWars: &7{wars}"
+      - "&b* &fClaims: &7{claims}"
+      - "&b* &fMembers: &7{members}"
+      - "&b* &fBans: &7{bans}"
+      - ""
+      - "&b* &fMotd:"
+      - "&7{motd}"
+      - ""
+    id: "PAPER"
+    data: 0
+    #you can put a nickname or a skull link
+    #see "skullOrnamentExample"
+    skullOwner: "null"
+    glow: false
+  #Next and previous page item
+  nextItem:
+    name: "&a--->"
+    lore:
+      - ""
+      - "&fClick to go"
+      - ""
+    id: "PLAYER_HEAD"
+    data: 0
+    skullOwner: "https://textures.minecraft.net/texture/f2ba866c635bc1805065af8a0247dc77b50e9bcefd98be3f93e80c29f39f39aa"
+    glow: false
+    slot: 9
+  previousItem:
+    name: "&c<---"
+    lore:
+      - ""
+      - "&fClick to go"
+      - ""
+    id: "PLAYER_HEAD"
+    data: 0
+    skullOwner: "https://textures.minecraft.net/texture/13d63c93cdd6db2f1eff2e3c42cfea6d37fbf5bc2e3763720e8168642ec9da1"
+    glow: false
+    slot: 1
+  ornamentItems:
+    # Filters:
+    # * filter_0 = power
+    # * filter_1 = members
+    # * filter_2 = claims
+    # * filter_3 = created date
+    filter_0:
+      name: "&aFilter by power"
+      lore:
+        - ""
+        - "&7Click to filter the factions by power"
+        - ""
+      id: "PLAYER_HEAD"
+      data: 0
+      skullOwner: "https://textures.minecraft.net/texture/3a7cda9004fc197d66afbc2b003a5b9ef13cf4600b1fc7490067590f047181e"
+      glow: false
+      slot: 4
+    filter_1:
+      name: "&aFilter by members"
+      lore:
+        - ""
+        - "&7Click to filter the factions by members"
+        - ""
+      id: "PLAYER_HEAD"
+      data: 0
+      skullOwner: "https://textures.minecraft.net/texture/4883d656e49c38c6b5378572f31c63c4c7a5dd4375b6ecbca43f5971c2cc4ff"
+      glow: false
+      slot: 5
+    filter_2:
+      name: "&aFilter by claims"
+      lore:
+        - ""
+        - "&7Click to filter the factions by claims"
+        - ""
+      id: "PLAYER_HEAD"
+      data: 0
+      skullOwner: "https://textures.minecraft.net/texture/ed339d52393d5183a3664015c0b2c6c1012ea1b525ed952073311ca180a0e6"
+      glow: false
+      slot: 6

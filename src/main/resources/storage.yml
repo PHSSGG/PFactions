@@ -1,0 +1,7 @@
+Storage:
+  mysql: false
+  hostname: "localhost"
+  port: 3306
+  database: "factions"
+  username: "root"
+  password: ""

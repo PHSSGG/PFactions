@@ -1,0 +1,199 @@
+WithoutFaction:
+  name: "&aFaction menu"
+  rows: 3
+  items:
+    create:
+      name: "&eCreate faction"
+      lore:
+        - ""
+        - "&fClick to create a faction"
+        - ""
+      id: "WRITABLE_BOOK"
+      data: 0
+      skullOwner: "null"
+      glow: false
+      slot: 11
+    top:
+      name: "&eTop factions"
+      lore:
+        - ""
+        - "&fClick to see the top factions"
+        - ""
+      id: "PLAYER_HEAD"
+      data: 0
+      skullOwner: "https://textures.minecraft.net/texture/f0e3fe55a8d2a5d29957e8241c53dfd289366d85b6393e3b3cb7003a8a77428b"
+      glow: false
+      slot: 15
+    help:
+      name: "&eHelp"
+      lore:
+        - ""
+        - "&fClick to see the list of commands"
+        - ""
+      id: "PLAYER_HEAD"
+      data: 0
+      skullOwner: "https://textures.minecraft.net/texture/65b95da1281642daa5d022adbd3e7cb69dc0942c81cd63be9c3857d222e1c8d9"
+      glow: false
+      slot: 16
+  #Ornament items
+  ornamentItems:
+
+WithFaction:
+  name: "&aFaction menu &7- &a{name}"
+  rows: 6
+  items:
+    faction:
+      name: "&eInformation about your faction"
+      lore:
+        - ""
+        - "&a- &eName: &7{name} &8| &7{display}"
+        - ""
+        - "&b* &fType: &7{type}"
+        - "&b* &fLeader: &7{leader}"
+        - "&b* &fPower: &7{power}"
+        - ""
+        - "&b* &fCreated at &7{created} &fago"
+        - ""
+        - "&b* &fRelations: &7{relations}"
+        - "&b* &fWars: &7{wars}"
+        - "&b* &fClaims: &7{claims}"
+        - "&b* &fMembers: &7{members}"
+        - "&b* &fBans: &7{bans}"
+        - ""
+        - "&b* &fMotd:"
+        - "&7{motd}"
+        - ""
+      id: "WRITABLE_BOOK"
+      data: 0
+      skullOwner: "null"
+      glow: false
+      slot: 12
+    top:
+      name: "&eTop factions"
+      lore:
+        - ""
+        - "&fClick to see the top factions"
+        - ""
+      id: "PLAYER_HEAD"
+      data: 0
+      skullOwner: "https://textures.minecraft.net/texture/f0e3fe55a8d2a5d29957e8241c53dfd289366d85b6393e3b3cb7003a8a77428b"
+      glow: false
+      slot: 14
+    help:
+      name: "&eHelp"
+      lore:
+        - ""
+        - "&fClick to see the list of commands"
+        - ""
+      id: "PLAYER_HEAD"
+      data: 0
+      skullOwner: "https://textures.minecraft.net/texture/65b95da1281642daa5d022adbd3e7cb69dc0942c81cd63be9c3857d222e1c8d9"
+      glow: false
+      slot: 15
+    info:
+      name: "&eInformation about you"
+      lore:
+        - ""
+        - "&a- &eLast seen: &8{last_seen} ago"
+        - ""
+        - "&b* &fKills: &7{kills}"
+        - "&b* &fDeaths: &7{deaths}"
+        - "&b* &fFaction: &7{faction}"
+        - "&b* &fPower: &7{player_power}"
+        - "&b* &fRole: &7{role}"
+        - ""
+      id: "PLAYER_HEAD"
+      data: 0
+      skullOwner: "https://textures.minecraft.net/texture/cd91f51266eddc6207f12ae8d7a49c5db0415ada04dab92bb7686afdb17f4d4e"
+      glow: false
+      slot: 16
+    members:
+      name: "&eMembers"
+      lore:
+        - ""
+        - "&b* &fMembers: &7{members}"
+        - "&b* &fBans: &7{bans}"
+        - ""
+      id: "PLAYER_HEAD"
+      data: 0
+      skullOwner: "https://textures.minecraft.net/texture/c0cf6cdc11db74c0d77ba3756c6fde345fe5443ecf7ea4a41d16254e659584cf"
+      glow: false
+      slot: 23
+    claim:
+      name: "&eClaims"
+      lore:
+        - ""
+        - "&fClaims: {claims}"
+        - ""
+      id: "PLAYER_HEAD"
+      data: 0
+      skullOwner: "https://textures.minecraft.net/texture/20ae64bbdf6fcc1355f00a3a1a54416ffc1e428589134d297908129a22f68d51"
+      glow: false
+      slot: 24
+    home:
+      name: "&eHome"
+      lore:
+        - ""
+        - "&b* &fHome: &7{home}"
+        - ""
+      id: "PLAYER_HEAD"
+      data: 0
+      skullOwner: "https://textures.minecraft.net/texture/ff812112dd187e7c8ddb5c3b8e854e82f19197414a8cdb542021f1a491897e53"
+      glow: false
+      slot: 25
+    relations:
+      name: "&eRelations"
+      lore:
+        - ""
+        - "&fFaction relations"
+        - ""
+      id: "PAPER"
+      data: 0
+      skullOwner: "null"
+      glow: false
+      slot: 32
+    type:
+      name: "&eFaction type"
+      lore:
+        - ""
+        - "&fClick to select a faction type"
+        - ""
+      loreSelected:
+        - ""
+        - "&fCurrent type: {type}"
+        - ""
+      loreHasBoss:
+        - ""
+        - "&fCurrentType: {type}"
+        - ""
+        - "&fClick to get the boss"
+        - ""
+      id: "PLAYER_HEAD"
+      data: 0
+      skullOwner: "https://textures.minecraft.net/texture/8c1e784e99bb563e3e3f9b866ca5c51d389184668063aeeb02f55d1df68b0f1a"
+      glow: false
+      slot: 33
+    leave:
+      name: "&eLeave faction"
+      lore:
+        - ""
+        - "&fClick to leave"
+        - ""
+      id: "PLAYER_HEAD"
+      data: 0
+      skullOwner: "https://textures.minecraft.net/texture/18660691d1ca029f120a3ff0eabab93a2306b37a7d61119fcd141ff2f6fcd798"
+      glow: false
+      slot: 34
+    disband:
+      name: "&eDisband faction"
+      lore:
+        - ""
+        - "&fClick to disband"
+        - ""
+      id: "PLAYER_HEAD"
+      data: 0
+      skullOwner: "https://textures.minecraft.net/texture/18660691d1ca029f120a3ff0eabab93a2306b37a7d61119fcd141ff2f6fcd798"
+      glow: false
+      slot: 34
+  #Ornament items
+  ornamentItems:

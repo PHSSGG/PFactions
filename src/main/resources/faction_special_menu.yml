@@ -1,0 +1,111 @@
+SelectType:
+  name: "&aFaction - Select type"
+  rows: 3
+  items:
+    zombie:
+      name: "&2Zombie"
+      lore:
+        - ""
+        - "&b* &fBoss:"
+        - "&8   - &eGiant zombie"
+        - ""
+        - "&b* &fEffects:"
+        - "&8   - &aResistance"
+        - "&8   - &aStrength"
+        - "&8   - &cHunger"
+        - ""
+        - "&7Click to select this type"
+        - ""
+      id: "PLAYER_HEAD"
+      data: 0
+      skullOwner: "https://textures.minecraft.net/texture/c4d19302aa31f1dde1e11f2550ba5d9013ab9add868d48e0f73211d7720d412"
+      glow: false
+      slot: 13
+    spider:
+      name: "&5Spider"
+      lore:
+        - ""
+        - "&b* &fBoss:"
+        - "&8   - &eSpider"
+        - ""
+        - "&b* &fEffects:"
+        - "&8   - &aSpeed"
+        - "&8   - &aHaste"
+        - "&8   - &aJump boost"
+        - ""
+        - "&b* &fRequirements:"
+        - "&8   - &cCan only eat rotten flesh"
+        - "&8   - &cCan only use armor of iron or lower"
+        - ""
+        - "&7Click to select this type"
+        - ""
+      id: "PLAYER_HEAD"
+      data: 0
+      skullOwner: "https://textures.minecraft.net/texture/2e25b639514b387aa7c1f29cd024cd18ff78fd34b932f05fb28295f5ef91e9b4"
+      glow: false
+      slot: 15
+  #Ornament items
+  ornamentItems:
+
+BossMenu:
+  name: "&aFaction - Boss"
+  rows: 1
+  bossItem:
+    slot: 5
+  #Ornament items
+  ornamentItems:
+
+ControlMenu:
+  name: "&aFaction - Boss"
+  rows: 1
+  items:
+    remove:
+      name: "&eRemove boss"
+      lore:
+        - ""
+        - "&7Click to despawn the boss"
+        - ""
+      id: "EGG"
+      data: 0
+      skullOwner: "null"
+      glow: false
+      slot: 4
+    attack:
+      name: "&eForce attack"
+      lore:
+        - ""
+        - "&7Click to force the boss to attack a player"
+        - ""
+      loreAttacking:
+        - ""
+        - "&fAttacking: &7{player}"
+        - "&8Click to cancel the attack"
+        - ""
+      id: "DIAMOND_SWORD"
+      data: 0
+      skullOwner: "null"
+      glow: false
+      slot: 5
+    friend:
+      name: "&eFriend"
+      # you can use {vertical} and {horizontal} to get the list of players
+      # separator and end will works only in horizontal:
+      # player1, player2, player3 and player4
+      separator: ","
+      end: "and"
+      none: "None"
+      horizontalFormat: "&7{player}"
+      verticalFormat: "&7{player}"
+      lore:
+        - ""
+        - "Whitelist:"
+        - "{horizontal}"
+        - ""
+        - "&7Left click to add a player to the boss whitelist"
+        - "&7Right click to remove"
+        - ""
+      id: "PAPER"
+      data: 0
+      skullOwner: "null"
+      glow: false
+      slot: 6

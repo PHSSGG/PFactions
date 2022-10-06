@@ -1,0 +1,52 @@
+InfoMenu:
+  name: "&aFaction info menu"
+  rows: 3
+  items:
+    faction:
+      name: "&eFaction info"
+      lore:
+        - ""
+        - "&a- &eName: &7{name} &8| &7{display}"
+        - ""
+        - "&b* &fType: &7{type}"
+        - "&b* &fLeader: &7{leader}"
+        - "&b* &fPower: &7{power}"
+        - ""
+        - "&b* &fCreated at &7{created} &fago"
+        - ""
+        - "&b* &fRelations: &7{relations}"
+        - "&b* &fWars: &7{wars}"
+        - "&b* &fClaims: &7{claims}"
+        - "&b* &fMembers: &7{members}"
+        - "&b* &fBans: &7{bans}"
+        - ""
+        - "&b* &fMotd:"
+        - "&7{motd}"
+        - ""
+      id: "WRITABLE_BOOK"
+      data: 0
+      skullOwner: "null"
+      glow: false
+      slot: 13
+    relations:
+      name: "&eRelations"
+      lore:
+        - ""
+        - "&aClick to open the relations menu"
+        - ""
+      id: "PAPER"
+      data: 0
+      skullOwner: "null"
+      glow: false
+      slot: 14
+    members:
+      name: "&eMembers"
+      lore:
+        - ""
+        - "&aClick to open the members menu"
+        - ""
+      id: "PLAYER_HEAD"
+      data: 0
+      skullOwner: "https://textures.minecraft.net/texture/c0cf6cdc11db74c0d77ba3756c6fde345fe5443ecf7ea4a41d16254e659584cf"
+      glow: false
+      slot: 15
